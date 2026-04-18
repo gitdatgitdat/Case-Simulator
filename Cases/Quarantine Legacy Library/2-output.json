@@ -1,0 +1,14 @@
+{
+  "case_id": "quarantine_legacy_library_001",
+  "status": "quarantined",
+  "risk_level": "medium",
+  "action_taken": "Moved target file to quarantine directory",
+  "quarantine_path": "/opt/quarantine/lib123",
+  "reason": "File flagged as legacy library; quarantined to validate dependency impact",
+  "next_steps": [
+    "Monitor application behavior",
+    "Check for dependency or service failures",
+    "Restore file if issues occur",
+    "Remove permanently only after validation"
+  ]
+}

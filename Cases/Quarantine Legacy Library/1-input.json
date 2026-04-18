@@ -1,0 +1,7 @@
+{
+  "case_id": "quarantine_legacy_library_001",
+  "os": "linux",
+  "target_file": "/opt/lib123",
+  "scanner_alert": "Legacy OpenSSL library detected",
+  "recommended_action": "Quarantine file and monitor for dependency failures"
+}
