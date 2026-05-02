@@ -1,0 +1,19 @@
+{
+  "case_id": "linux_agent_tls_connection_failure_001",
+  "os": "linux",
+  "issue": "Endpoint agent cannot connect to management server",
+  "scope": "Single endpoint affected; other endpoints on same subnet are connecting successfully",
+  "checks_performed": [
+    "Local firewall rules reviewed",
+    "Route to management server checked",
+    "Manual TLS connection test attempted",
+    "Packet capture collected during registration attempt"
+  ],
+  "observed_behavior": {
+    "tcp_handshake": "completed",
+    "tls_handshake": "failed_or_incomplete",
+    "local_firewall": "no obvious blocking rule observed",
+    "route": "expected route observed"
+  },
+  "recommended_action": "Escalate to network or security team with packet capture evidence"
+}

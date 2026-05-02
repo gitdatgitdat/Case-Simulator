@@ -1,0 +1,15 @@
+{
+  "case_id": "linux_agent_tls_connection_failure_001",
+  "status": "network_path_review_required",
+  "risk_level": "medium",
+  "finding": "TCP connectivity completed, but TLS negotiation did not complete successfully",
+  "likely_cause": "TLS inspection, proxying, firewall inspection, or another network-path device interfering with the connection",
+  "action_taken": "Collected packet capture and isolated issue beyond basic endpoint firewall and routing checks",
+  "next_steps": [
+    "Provide packet capture to network or security team",
+    "Review TLS inspection or proxy policies along the path",
+    "Confirm whether the management server and port are excluded from TLS inspection",
+    "Retest agent registration after network-path changes",
+    "Collect a new packet capture if the issue persists"
+  ]
+}
